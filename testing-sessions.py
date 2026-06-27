@@ -262,4 +262,21 @@ def main():
     )
 
 
-if __nam
+if __name__ == "__main__":
+
+    try:
+        main()
+
+    except KeyboardInterrupt:
+        print(
+            "Interrupted"
+        )
+
+    except Exception as exc:
+        print(
+            "Failure:",
+            exc
+        )
+
+print("Done")
+```
